@@ -1,0 +1,67 @@
+body.dark {
+    background-image: url('../img/dark.jpg');
+    font-family: Chandas serif;
+}
+
+body {
+    font-size: 22px;
+    margin: 0;
+}
+
+body.dark .content {
+    color: red;
+    background-color: rgba(64, 64, 64, 0.9);
+}
+
+body.light {
+    background: papayawhip;
+    color: midnightblue;
+    font-family: Sahadeva sans-serif;
+}
+
+body.magical {
+    font-family: "Droid Sans", serif;
+    background-image: url('../img/unicorns.jpg');
+}
+
+.content {
+    background-color: rgba(64, 64, 64, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.error {
+    background-color: red;
+    color: black;
+}
+
+.menu {
+    margin: 0;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+}
+
+.menu a {
+    border: 1px solid black;
+    padding: 2px;
+    text-decoration: none;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.menu a:visited {
+    color: white;
+}
