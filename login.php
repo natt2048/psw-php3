@@ -14,7 +14,10 @@
         $stmt->close();
         $conn->close();
     }
-?>
+
+if (isset($_SESSION['userId'])) {
+    header('Location: index.php');
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,13 +29,7 @@
 <body>
 <div class="content">
     <?php require_once 'menu.php'; ?>
-    
-    <?php 
-        if (!isset($_SESSION['userId'])) {
-            require_once 'login_form.php'; 
-        } else {
-            header('Location: index.php');
-        } ?>
+    <?php require_once 'login_form.php'; ?>
 </div>
 </body>
 </html>
